@@ -38,9 +38,11 @@ Por se tratar de um projeto ficticio, não existe um stakeholder, para suprir es
 Criei o seguinte script de conversa após explicar o projeto a ele:
 
 **Script**
+
 Atue como o stakeholder desse projeto. Imagine que sou o analista de dados de sua empresa, e você está com algumas dúvidas quanto ao processo de vendas, me passe algumas perguntas para que eu possa analisar os dados e lhe passar as respostas.
 
 **Reposta do ChatGPT**
+
 Claro! Como stakeholder do projeto, aqui estão algumas perguntas relevantes sobre o processo de vendas que podem ajudar a entender melhor o desempenho e identificar oportunidades de melhoria:
 
 ### Perguntas sobre vendas:
