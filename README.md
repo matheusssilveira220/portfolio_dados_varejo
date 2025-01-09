@@ -45,24 +45,24 @@ Atue como o stakeholder desse projeto. Imagine que sou o analista de dados de su
 
 Claro! Como stakeholder do projeto, aqui estão algumas perguntas relevantes sobre o processo de vendas que podem ajudar a entender melhor o desempenho e identificar oportunidades de melhoria:
 
-### Perguntas sobre vendas:
+#### Perguntas sobre vendas:
 1. **Quais são os produtos mais vendidos nos últimos 3 meses?**
 2. **Qual é o ticket médio das vendas realizadas por cliente?**
 3. **Quais cidades concentram o maior número de vendas?**
 4. **Qual fornecedor possui os produtos com maior volume de vendas?**
 5. **Existe alguma sazonalidade nas vendas que possamos explorar?**
 
-### Perguntas sobre clientes:
+#### Perguntas sobre clientes:
 6. **Quais clientes têm o maior valor total de compras?**
 7. **Qual é o perfil geográfico dos nossos clientes mais ativos?**
 8. **Quantos clientes fizeram compras repetidas no último ano?**
 
-### Perguntas sobre desempenho geral:
+#### Perguntas sobre desempenho geral:
 9. **Qual é a tendência de receita total nos últimos 6 meses?**
 10. **Quais produtos têm a maior margem de lucro considerando o custo por fornecedor e o preço de venda?**
 11. **Existe uma correlação entre o valor total de vendas e a frequência de compras por cliente?**
 
-### Perguntas para decisões estratégicas:
+#### Perguntas para decisões estratégicas:
 12. **Quais fornecedores possuem produtos com menor desempenho de vendas e por quê?**
 13. **Há alguma categoria de produto que não está sendo bem explorada e poderia gerar mais receita?**
 14. **Quais regiões apresentam menor número de clientes e poderiam ser alvo de campanhas de marketing?**
@@ -73,3 +73,7 @@ Essas perguntas ajudam a guiar uma análise estratégica do processo de vendas, 
 ## Análise Exploratória
 
 Agora com o BD montado, e as perguntas na mesa, precisava entender com oque estava trabalhando, iniciei então uma análise exploratória no banco de dados utilizando o SQL.
+
+## Definição de como será respondido as perguntas
+
+Como estamos simulando um stakeholder, não posso assumir a forma que ele deseja receber, dessa forma farei 2 apresentações diferentes. A primeira foi feita uma apresentação em PDF, contendo a resposta para cada uma das dúvidas de forma rápida e direta, como se fosse uma apresentação em uma reunião. Já a segunda, em forma de dashboard contendo todas as informações solicitadas, de forma simples para o leitor entender os pontos solicitados.
