@@ -36,6 +36,7 @@ Optei por utilizar o BD PostgreSQL, por se tratar de um software OpenSource e de
 Por se tratar de um projeto ficticio, não existe um stakeholder, para suprir essa etapa, solicitei ao ChatGPT, que simulasse essa etapa. Solicitei que realizasse perguntas necessárias para entender o andamento do processo de vendas, para que eu encontrasse um norte para seguir com a análise. 
 
 Criei o seguinte script de conversa após explicar o projeto a ele:
+
 **Script**
 Atue como o stakeholder desse projeto. Imagine que sou o analista de dados de sua empresa, e você está com algumas dúvidas quanto ao processo de vendas, me passe algumas perguntas para que eu possa analisar os dados e lhe passar as respostas.
 
