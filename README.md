@@ -33,7 +33,7 @@ Optei por utilizar o BD PostgreSQL, por se tratar de um software OpenSource e de
 
 ## Conversa com stakeholder
 
-Por se tratar de um projeto ficticio, não existe um stakeholder, para suprir essa etapa, solicitei ao ChatGPT, que simulasse essa etapa. Solicitei que realizasse perguntas necessárias para entender o andamento do processo de vendas, para que eu encontrasse um norte para seguir com a análise. 
+Por se tratar de um projeto ficticio, não existe um stakeholder, para suprir essa etapa, solicitei ao ChatGPT, que simulasse essa etapa. Pedi que realizasse perguntas necessárias para entender o andamento do processo de vendas, para que eu encontrasse um norte para seguir com a análise. 
 
 Criei o seguinte script de conversa após explicar o projeto a ele:
 
@@ -74,6 +74,14 @@ Essas perguntas ajudam a guiar uma análise estratégica do processo de vendas, 
 
 Agora com o BD montado, e as perguntas na mesa, precisava entender com oque estava trabalhando, iniciei então uma análise exploratória no banco de dados utilizando o SQL.
 
+Separei a análise nas seguintes etapas:
+
+1. Entender a relação entre as planilhas para poder utilizar Joins com efetividade;
+
+2. Conhecer os tipos de dados, para não utilizar memória desencessária nas Queries;
+
+3. Começar a responder as perguntas utilizando as Queries, de forma que a importação para o PowerBI fique mais rápida.
+
 ## Definição de como será respondido as perguntas
 
-Como estamos simulando um stakeholder, não posso assumir a forma que ele deseja receber, dessa forma farei 2 apresentações diferentes. A primeira foi feita uma apresentação em PDF, contendo a resposta para cada uma das dúvidas de forma rápida e direta, como se fosse uma apresentação em uma reunião. Já a segunda, em forma de dashboard contendo todas as informações solicitadas, de forma simples para o leitor entender os pontos solicitados.
+Como estamos simulando um stakeholder, não posso assumir a forma que ele deseja receber, dessa forma farei 2 apresentações diferentes. A primeira foi feita uma apresentação em PDF, contendo a resposta em Queries com respostas diretas. Já a segunda, em forma de dashboard contendo gráficos de evolução temporal e permitindo que o usuário visualize as áreas desejadas.
