@@ -20,7 +20,7 @@ GROUP BY
 ORDER BY 
 	vendas_total DESC;
 ```
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 
 ## 2.	Qual é o ticket médio das vendas realizadas por cliente?
 Com essa query, encontramos o ticket médio:
@@ -31,7 +31,7 @@ SELECT
 FROM
 	vendas;
 ```
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 
 ## 3.	Quais cidades concentram o maior número de vendas?
 Essa query demostra as cidades onde se concentram o maior número de vendas:
@@ -50,7 +50,7 @@ GROUP BY
 ORDER BY
 	vendas_total DESC;
 ```
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 
 ## 4.	Qual fornecedor possui os produtos com maior volume de vendas?
 Essa query já é algo mais avançado, fiz o uso de CTE e de JOINs para poder encontrar quais fornecedores possuem maior participação nas vendas:
@@ -85,7 +85,7 @@ GROUP BY
 ORDER BY 
 	contagem_total DESC;
 ```
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 
 ## 5.	Existe alguma sazonalidade nas vendas que possamos explorar?
 Nessa query encontramos os meses com maior venda, por se tratar de dados aleatórios, não encontrei nenhuma sazonalidade efetivamente dito:
@@ -101,3 +101,40 @@ GROUP BY
 ORDER BY
 	contagem_venda DESC;
 ```
+---
+
+# Perguntas sobre clientes:
+
+## 6. Quais clientes têm o maior valor total de compras?
+---
+
+## 7. Qual é o perfil geográfico dos nossos clientes mais ativos?
+---
+
+## 8. Quantos clientes fizeram compras repetidas no último ano?
+---
+
+# Perguntas sobre desempenho geral:
+
+## 9. Qual é a tendência de receita total nos últimos 6 meses?
+---
+
+## 10. Quais produtos têm a maior margem de lucro considerando o custo por fornecedor e o preço de venda?
+---
+
+## 11. Existe uma correlação entre o valor total de vendas e a frequência de compras por cliente?
+---
+
+# Perguntas para decisões estratégicas:
+
+## 12. Quais fornecedores possuem produtos com menor desempenho de vendas e por quê?
+---
+
+## 13. Há alguma categoria de produto que não está sendo bem explorada e poderia gerar mais receita?
+---
+
+## 14. Quais regiões apresentam menor número de clientes e poderiam ser alvo de campanhas de marketing?
+---
+
+## 15. Quanto representaram as vendas por tipo de produto em relação ao total de receitas?
+---
