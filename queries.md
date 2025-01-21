@@ -161,42 +161,22 @@ ORDER BY
 
 ## 8. Quantos clientes fizeram compras repetidas no último ano?
 ```sql
+SELECT
+	v.id_cliente,
+	c.nome,
+	COUNT(*) AS compras
+FROM
+	vendas AS v
+LEFT JOIN
+	clientes AS c
+ON
+	v.id_cliente = c.id_cliente
+WHERE
+	EXTRACT(YEAR FROM data_venda) = 2024
+GROUP BY 
+	v.id_cliente, c.nome
+HAVING
+	COUNT(*) > 5
+;
 ```
----
-
-# Perguntas sobre desempenho geral:
-
-## 9. Qual é a tendência de receita total nos últimos 6 meses?
-```sql
-```
----
-
-## 10. Quais produtos têm a maior margem de lucro considerando o custo por fornecedor e o preço de venda?
-```sql
-```
----
-
-## 11. Existe uma correlação entre o valor total de vendas e a frequência de compras por cliente?
-```sql
-```
----
-
-# Perguntas para decisões estratégicas:
-
-## 12. Quais fornecedores possuem produtos com menor desempenho de vendas e por quê?
-```sql
-```
----
-
-## 13. Há alguma categoria de produto que não está sendo bem explorada e poderia gerar mais receita?
-```sql
-```
----
-
-## 14. Quais regiões apresentam menor número de clientes e poderiam ser alvo de campanhas de marketing?
-```sql
-```
----
-
-## 15. Quanto representaram as vendas por tipo de produto em relação ao total de receitas?
 ---
