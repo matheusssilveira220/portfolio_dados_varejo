@@ -106,34 +106,96 @@ ORDER BY
 # Perguntas sobre clientes:
 
 ## 6. Quais clientes têm o maior valor total de compras?
+Nessa query decidir ir um pouco mais longe, e encontrar também o ticket médio de cada cliente:
+```sql
+SELECT
+	id_cliente,
+	SUM (valor) AS valor_total,
+	COUNT (*) AS qtde_compras,
+	ROUND(SUM (valor) / COUNT (*),2) AS ticket_medio
+FROM
+	vendas
+GROUP BY 
+	id_cliente
+ORDER BY
+	valor_total DESC
+LIMIT 5;
+```
 ---
 
 ## 7. Qual é o perfil geográfico dos nossos clientes mais ativos?
+Nessa decidi seguir duas respostas, separando primeiramente por estado, e então por cidade.
+Essa primeira query representa os estados:
+```sql
+SELECT
+    c.estado,
+    COUNT(*) AS qtde_compras
+FROM
+    vendas AS v
+LEFT JOIN
+    clientes AS c
+ON 
+    v.id_cliente = c.id_cliente
+GROUP BY 
+    c.estado
+ORDER BY
+    qtde_compras DESC;
+```
+Nessa outra representa as cidades:
+```sql
+SELECT
+    c.cidade,
+    COUNT(*) AS qtde_compras
+FROM
+    vendas AS v
+LEFT JOIN
+    clientes AS c
+ON 
+    v.id_cliente = c.id_cliente
+GROUP BY 
+    c.cidade
+ORDER BY
+    qtde_compras DESC;
+```
 ---
 
 ## 8. Quantos clientes fizeram compras repetidas no último ano?
+```sql
+```
 ---
 
 # Perguntas sobre desempenho geral:
 
 ## 9. Qual é a tendência de receita total nos últimos 6 meses?
+```sql
+```
 ---
 
 ## 10. Quais produtos têm a maior margem de lucro considerando o custo por fornecedor e o preço de venda?
+```sql
+```
 ---
 
 ## 11. Existe uma correlação entre o valor total de vendas e a frequência de compras por cliente?
+```sql
+```
 ---
 
 # Perguntas para decisões estratégicas:
 
 ## 12. Quais fornecedores possuem produtos com menor desempenho de vendas e por quê?
+```sql
+```
 ---
 
 ## 13. Há alguma categoria de produto que não está sendo bem explorada e poderia gerar mais receita?
+```sql
+```
 ---
 
 ## 14. Quais regiões apresentam menor número de clientes e poderiam ser alvo de campanhas de marketing?
+```sql
+```
 ---
 
 ## 15. Quanto representaram as vendas por tipo de produto em relação ao total de receitas?
