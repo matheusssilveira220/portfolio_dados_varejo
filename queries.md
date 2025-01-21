@@ -160,6 +160,7 @@ ORDER BY
 ---
 
 ## 8. Quantos clientes fizeram compras repetidas no último ano?
+Nessa query encontramos diversos clientes que fizeram mais de 5 compras no último ano:
 ```sql
 SELECT
 	v.id_cliente,
