@@ -57,16 +57,6 @@ Claro! Como stakeholder do projeto, aqui estão algumas perguntas relevantes sob
 7. **Qual é o perfil geográfico dos nossos clientes mais ativos?**
 8. **Quantos clientes fizeram compras repetidas no último ano?**
 
-#### Perguntas sobre desempenho geral:
-9. **Qual é a tendência de receita total nos últimos 6 meses?**
-10. **Quais produtos têm a maior margem de lucro considerando o custo por fornecedor e o preço de venda?**
-11. **Existe uma correlação entre o valor total de vendas e a frequência de compras por cliente?**
-
-#### Perguntas para decisões estratégicas:
-12. **Quais fornecedores possuem produtos com menor desempenho de vendas e por quê?**
-13. **Há alguma categoria de produto que não está sendo bem explorada e poderia gerar mais receita?**
-14. **Quais regiões apresentam menor número de clientes e poderiam ser alvo de campanhas de marketing?**
-15. **Quanto representaram as vendas por tipo de produto em relação ao total de receitas?**
 
 Essas perguntas ajudam a guiar uma análise estratégica do processo de vendas, promovendo insights úteis para ações futuras. Se precisar de ajuda com queries específicas para responder a qualquer uma dessas perguntas, estou aqui para ajudar!
 
