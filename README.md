@@ -1,9 +1,9 @@
 # :open_book: VAREJO
 
-Projeto voltado a simular uma empresa de varejo, especificamente o setor de vendas e parcialmente o controle de estoque / fornecedores. Com ajuda do ChatGPT, criei repositorios aleatorios de dados dentro do PostgreSQL. Criado tabelas e itens dentro do BD, utilizei SQL e PowerBI para realizar a Análise + Data visualization.
+Projeto voltado a simular uma empresa de varejo, especificamente o setor de vendas e parcialmente o controle de estoque / fornecedores. Com ajuda do DeepSeek, criei repositorios aleatorios de dados dentro do PostgreSQL. Criado tabelas e itens dentro do BD, utilizei SQL e PowerBI para realizar a Análise + Data visualization.
 
 ### :wrench: Ferrramentas
--**ChatGPT**
+-**DeepSeek**
 
 -**PostgreSQL**
 
@@ -33,7 +33,7 @@ Optei por utilizar o BD PostgreSQL, por se tratar de um software OpenSource e de
 
 ## Conversa com stakeholder
 
-Por se tratar de um projeto ficticio, não existe um stakeholder, para suprir essa etapa, solicitei ao ChatGPT, que simulasse essa etapa. Pedi que realizasse perguntas necessárias para entender o andamento do processo de vendas, para que eu encontrasse um norte para seguir com a análise. 
+Por se tratar de um projeto ficticio, não existe um stakeholder, para suprir essa etapa, solicitei ao DeepSeek, que simulasse essa etapa. Pedi que realizasse perguntas necessárias para entender o andamento do processo de vendas, para que eu encontrasse um norte para seguir com a análise. 
 
 Criei o seguinte script de conversa após explicar o projeto a ele:
 
@@ -41,7 +41,7 @@ Criei o seguinte script de conversa após explicar o projeto a ele:
 
 Atue como o stakeholder desse projeto. Imagine que sou o analista de dados de sua empresa, e você está com algumas dúvidas quanto ao processo de vendas, me passe algumas perguntas para que eu possa analisar os dados e lhe passar as respostas.
 
-**Reposta do ChatGPT**
+**Reposta do DeepSeek**
 
 Claro! Como stakeholder do projeto, aqui estão algumas perguntas relevantes sobre o processo de vendas que podem ajudar a entender melhor o desempenho e identificar oportunidades de melhoria:
 
