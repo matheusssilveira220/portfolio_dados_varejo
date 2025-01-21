@@ -3,7 +3,7 @@
 ## 1.	Quais são os produtos mais vendidos nos últimos 3 meses?
 Com essa query é possível localizar os top3 produtos nos últimos 3 meses:
 
-'''sql
+```sql
 SELECT 
 	v.id_produto, 
 	COUNT (*) AS vendas_total, 
@@ -19,24 +19,24 @@ GROUP BY
 	v.id_produto, p.nome
 ORDER BY 
 	vendas_total DESC;
-'''
+```
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## 2.	Qual é o ticket médio das vendas realizadas por cliente?
 Com essa query, encontramos o ticket médio:
 
-'''sql
+```sql
 SELECT 
 	ROUND(SUM (valor) / COUNT (*),2) AS ticket_medio
 FROM
 	vendas;
-'''
+```
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## 3.	Quais cidades concentram o maior número de vendas?
 Essa query demostra as cidades onde se concentram o maior número de vendas:
 
-'''sql
+```sql
 SELECT  
 COUNT (*) AS vendas_total,
 	c.cidade
@@ -49,13 +49,13 @@ GROUP BY
 	c.cidade
 ORDER BY
 	vendas_total DESC;
-'''
+```
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## 4.	Qual fornecedor possui os produtos com maior volume de vendas?
 Essa query já é algo mais avançado, fiz o uso de CTE e de JOINs para poder encontrar quais fornecedores possuem maior participação nas vendas:
 
-'''sql
+```sql
 WITH top_produtos AS (
     SELECT
         COUNT(*) AS contagem_geral,
@@ -84,13 +84,13 @@ GROUP BY
 	fornecedor
 ORDER BY 
 	contagem_total DESC;
-'''
+```
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ## 5.	Existe alguma sazonalidade nas vendas que possamos explorar?
 Nessa query encontramos os meses com maior venda, por se tratar de dados aleatórios, não encontrei nenhuma sazonalidade efetivamente dito:
 
-'''sql
+```sql
 SELECT 
 	EXTRACT (MONTH FROM data_venda) AS mes,
 	COUNT (*) AS contagem_venda
@@ -100,4 +100,4 @@ GROUP BY
 	mes
 ORDER BY
 	contagem_venda DESC;
-'''
+```
