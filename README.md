@@ -17,7 +17,7 @@ Projeto voltado a simular uma empresa de varejo, especificamente o setor de vend
 
 -**Criação Aleatória de Informações**
 
--**Criações de Queryes**
+-**Criações de Queries**
 
 -**Importação de Dados ao PowerBI**
 
@@ -25,11 +25,18 @@ Projeto voltado a simular uma empresa de varejo, especificamente o setor de vend
 
 -**Data Storytelling**
 
+## Replicar projeto
+
+Para replicar o projeto, será necessário a utilização do Banco de Dados PostgreSQL;
+Criar as tabelas citadas;
+Randomizar os dados;
+Então executar as queries na pasta queries.
+
 # Etapas
 
 ## Criação Banco de Dados
 
-Optei por utilizar o BD PostgreSQL, por se tratar de um software OpenSource e de alta escalabilidade. O script para criação das tabelas, e randomização dos dados deixarei no arquivo SQL. Foram criadas 4 tabelas, sendo elas, Clientes, Fornecedores, Produtos e Vendas. Deixarei o esquema de relações entre as tabelas em um PDF.
+Optei por utilizar o BD PostgreSQL, por se tratar de um software OpenSource e de alta escalabilidade. O script para criação das tabelas, e randomização dos dados deixarei no arquivo query_criacao_bd. Foram criadas 4 tabelas, sendo elas, Clientes, Fornecedores, Produtos e Vendas. Deixarei o esquema de relações entre as tabelas em um PDF.
 
 ## Conversa com stakeholder
 
@@ -58,8 +65,6 @@ Claro! Como stakeholder do projeto, aqui estão algumas perguntas relevantes sob
 8. **Quantos clientes fizeram compras repetidas no último ano?**
 
 
-Essas perguntas ajudam a guiar uma análise estratégica do processo de vendas, promovendo insights úteis para ações futuras. Se precisar de ajuda com queries específicas para responder a qualquer uma dessas perguntas, estou aqui para ajudar!
-
 ## Análise Exploratória
 
 Agora com o BD montado, e as perguntas na mesa, precisava entender com oque estava trabalhando, iniciei então uma análise exploratória no banco de dados utilizando o SQL.
@@ -67,11 +72,20 @@ Agora com o BD montado, e as perguntas na mesa, precisava entender com oque esta
 Separei a análise nas seguintes etapas:
 
 1. Entender a relação entre as planilhas para poder utilizar Joins com efetividade;
+Para isso fiz o estudo do diagrama do banco de dados.
 
 2. Conhecer os tipos de dados, para não utilizar memória desencessária nas Queries;
+Nada de anormal, por se tratar de dados criados dentro do próprio banco de dados.  
 
 3. Começar a responder as perguntas utilizando as Queries, de forma que a importação para o PowerBI fique mais rápida.
+Farei isso criando views dentro do banco de dados.
 
-## Definição de como será respondido as perguntas
+## Definição de como serão respondidas as perguntas
 
 Como estamos simulando um stakeholder, não posso assumir a forma que ele deseja receber, dessa forma farei 2 apresentações diferentes. A primeira foi feita uma apresentação em PDF, contendo a resposta em Queries com respostas diretas. Já a segunda, em forma de dashboard contendo gráficos de evolução temporal e permitindo que o usuário visualize as áreas desejadas.
+
+As queries para resposta das dúvidas estão no arquivo queries, nele pode ver as etapas que decisões que tomei para responder cada pergunta, fiz o uso de CTES e JOINs.
+
+## Respostas aos problemas e pontos importantes encontrados
+
+...
