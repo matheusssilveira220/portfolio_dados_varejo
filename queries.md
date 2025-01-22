@@ -20,6 +20,19 @@ GROUP BY
 ORDER BY 
 	vendas_total DESC;
 ```
+O resultado da Query está representado abaixo:
+
+```markdown
+| id_produto | vendas_total | nome       |
+|------------|--------------|------------|
+| 38         | 10           |"Produto 38"|
+| 12         | 9	    |"Produto 12"|
+| 26         | 8            |"Produto 26"|
+
+38	10	"Produto 38"
+12	9	"Produto 12"
+26	8	"Produto 26"
+```
 ---
 
 ## 2.	Qual é o ticket médio das vendas realizadas por cliente?
