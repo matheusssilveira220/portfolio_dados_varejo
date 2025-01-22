@@ -1,3 +1,5 @@
+#[Ver outros projetos](https://github.com/matheusssilveira220/portfolio_dados)
+---
 # :open_book: VAREJO
 
 Projeto voltado a simular uma empresa de varejo, especificamente o setor de vendas e parcialmente o controle de estoque / fornecedores. Com ajuda do DeepSeek, criei repositorios aleatorios de dados dentro do PostgreSQL. Criado tabelas e itens dentro do BD, utilizei SQL e PowerBI para realizar a Análise + Data visualization.
