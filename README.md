@@ -72,20 +72,22 @@ Agora com o BD montado, e as perguntas na mesa, precisava entender com oque esta
 Separei a análise nas seguintes etapas:
 
 1. Entender a relação entre as planilhas para poder utilizar Joins com efetividade;
-Para isso fiz o estudo do diagrama do banco de dados.
+Para isso fiz o estudo do [diagrama](https://github.com/matheusssilveira220/portfolio_dados_varejo/blob/main/diagrama.png) do banco de dados.
 
 2. Conhecer os tipos de dados, para não utilizar memória desencessária nas Queries;
 Nada de anormal, por se tratar de dados criados dentro do próprio banco de dados.  
 
-3. Começar a responder as perguntas utilizando as Queries, de forma que a importação para o PowerBI fique mais rápida.
-Farei isso criando views dentro do banco de dados.
+3. Começar a responder as perguntas utilizando as Queries.
+Farei isso criando queries dentro do banco de dados.
+
+4. Farei um dashboard interativo, que contenham todas as informações presentes no banco de dados, de forma que fique simples que o stakeholder ou qualquer outro consiga encontrar as informações desejadas.
 
 ## Definição de como serão respondidas as perguntas
 
-Como estamos simulando um stakeholder, não posso assumir a forma que ele deseja receber, dessa forma farei 2 apresentações diferentes. A primeira foi feita uma apresentação em PDF, contendo a resposta em Queries com respostas diretas. Já a segunda, em forma de dashboard contendo gráficos de evolução temporal e permitindo que o usuário visualize as áreas desejadas.
+Como estamos simulando um stakeholder, não posso assumir a forma que ele deseja receber, dessa forma farei 2 apresentações diferentes. A primeira será feita utilizando as queries, respondendo diretamente as perguntas, e buscando algum insight. Já a segunda, em forma de dashboard contendo gráficos de evolução temporal e permitindo que o usuário visualize as áreas desejadas.
 
-As queries para resposta das dúvidas estão no arquivo queries, nele pode ver as etapas que decisões que tomei para responder cada pergunta, fiz o uso de CTES e JOINs.
+## [Queries](https://github.com/matheusssilveira220/portfolio_dados_varejo/blob/main/queries.md)
+As queries para resposta das dúvidas estão no arquivo queries, nele pode ver as etapas e decisões que tomei para responder cada pergunta, fiz o uso de CTES e JOINs.
 
-## Respostas aos problemas e pontos importantes encontrados
-
-...
+## Dashboard
+Ainda em construção...
