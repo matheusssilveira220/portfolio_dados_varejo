@@ -40,6 +40,12 @@ SELECT
 FROM
 	vendas;
 ```
+
+```markdown
+|ticket_medio|
+|------------|
+|112.17      |
+```
 ---
 
 ## 3.	Quais cidades concentram o maior número de vendas?
@@ -58,6 +64,17 @@ GROUP BY
 	c.cidade
 ORDER BY
 	vendas_total DESC;
+```
+
+```markdown
+|"vendas_total" |"cidade"|
+|---------------|--------|
+|210	|"Rio de Janeiro"|
+|178	|"Porto Alegre"|
+|171	|"Curitiba"|
+|153	|"São Paulo"|
+|145	|"Belo Horizonte"|
+|143	|"Salvador"|
 ```
 ---
 
@@ -94,6 +111,9 @@ GROUP BY
 ORDER BY 
 	contagem_total DESC;
 ```
+
+```markdown
+```
 ---
 
 ## 5.	Existe alguma sazonalidade nas vendas que possamos explorar?
@@ -109,6 +129,9 @@ GROUP BY
 	mes
 ORDER BY
 	contagem_venda DESC;
+```
+
+```markdown
 ```
 ---
 
@@ -130,6 +153,9 @@ ORDER BY
 	valor_total DESC
 LIMIT 5;
 ```
+
+```markdown
+```
 ---
 
 ## 7. Qual é o perfil geográfico dos nossos clientes mais ativos?
@@ -150,6 +176,9 @@ GROUP BY
 ORDER BY
     qtde_compras DESC;
 ```
+
+```markdown
+```
 Nessa outra representa as cidades:
 ```sql
 SELECT
@@ -165,6 +194,9 @@ GROUP BY
     c.cidade
 ORDER BY
     qtde_compras DESC;
+```
+
+```markdown
 ```
 ---
 
@@ -188,5 +220,8 @@ GROUP BY
 HAVING
 	COUNT(*) > 5
 ;
+```
+
+```markdown
 ```
 ---
