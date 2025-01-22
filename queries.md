@@ -18,16 +18,17 @@ WHERE
 GROUP BY 
 	v.id_produto, p.nome
 ORDER BY 
-	vendas_total DESC;
+	vendas_total DESC
+LIMIT 3;
 ```
 O resultado da Query está representado abaixo:
 
 ```markdown
-| id_produto | vendas_total | nome       |
+|id_produto  |vendas_total  |nome        |
 |------------|--------------|------------|
-| 38         | 10           |"Produto 38"|
-| 12         | 9	    |"Produto 12"|
-| 26         | 8            |"Produto 26"|
+|38          |10            |Produto 38  |
+|12          |9		    |Produto 12  |
+|26          |8             |Produto 26  |
 ```
 ---
 
@@ -42,9 +43,9 @@ FROM
 ```
 
 ```markdown
-|ticket_medio|
-|------------|
-|112.17      |
+|ticket_medio |
+|-------------|
+|112.17       |
 ```
 ---
 
@@ -67,14 +68,14 @@ ORDER BY
 ```
 
 ```markdown
-|"vendas_total" |"cidade"|
-|---------------|--------|
-|210	|"Rio de Janeiro"|
-|178	|"Porto Alegre"|
-|171	|"Curitiba"|
-|153	|"São Paulo"|
-|145	|"Belo Horizonte"|
-|143	|"Salvador"|
+|vendas_total   |cidade		 |
+|---------------|----------------|
+|210		|Rio de Janeiro	 |
+|178		|Porto Alegre	 |
+|171		|Curitiba	 |
+|153		|São Paulo	 |
+|145		|Belo Horizonte  |
+|143		|Salvador	 |
 ```
 ---
 
@@ -113,6 +114,13 @@ ORDER BY
 ```
 
 ```markdown
+|contagem_total	|fornecedor   |
+|---------------|-------------|
+|187		|Fornecedor 10|
+|142		|Fornecedor 5 |
+|130		|Fornecedor 2 |
+|126		|Fornecedor 7 |
+|93		|Fornecedor 9 |
 ```
 ---
 
@@ -132,6 +140,20 @@ ORDER BY
 ```
 
 ```markdown
+| mes | contagem_venda |
+|-----|----------------|
+| 7   | 98             |
+| 11  | 89             |
+| 10  | 88             |
+| 2   | 88             |
+| 5   | 86             |
+| 3   | 85             |
+| 12  | 84             |
+| 1   | 79             |
+| 4   | 78             |
+| 6   | 76             |
+| 9   | 75             |
+| 8   | 74             |
 ```
 ---
 
@@ -155,6 +177,13 @@ LIMIT 5;
 ```
 
 ```markdown
+| id_cliente | valor_total | qtde_compras | ticket_medio |
+|------------|-------------|--------------|--------------|
+| 232        | 1271.94     | 8            | 158.99       |
+| 161        | 1236.48     | 8            | 154.56       |
+| 111        | 1151.11     | 9            | 127.90       |
+| 34         | 1143.14     | 9            | 127.02       |
+| 182        | 1120.31     | 8            | 140.04       |
 ```
 ---
 
@@ -178,6 +207,14 @@ ORDER BY
 ```
 
 ```markdown
+| estado | qtde_compras |
+|--------|--------------|
+| SP     | 196          |
+| RJ     | 183          |
+| MG     | 178          |
+| BA     | 164          |
+| PR     | 143          |
+| RS     | 136          |
 ```
 Nessa outra representa as cidades:
 ```sql
@@ -197,11 +234,19 @@ ORDER BY
 ```
 
 ```markdown
+| cidade           | qtde_compras |
+|------------------|--------------|
+| Rio de Janeiro   | 210          |
+| Porto Alegre     | 178          |
+| Curitiba         | 171          |
+| São Paulo        | 153          |
+| Belo Horizonte   | 145          |
+| Salvador         | 143          |
 ```
 ---
 
 ## 8. Quantos clientes fizeram compras repetidas no último ano?
-Nessa query encontramos diversos clientes que fizeram mais de 5 compras no último ano:
+Nessa query encontramos diversos clientes que fizeram mais de 8 compras no último ano:
 ```sql
 SELECT
 	v.id_cliente,
@@ -218,10 +263,22 @@ WHERE
 GROUP BY 
 	v.id_cliente, c.nome
 HAVING
-	COUNT(*) > 5
+	COUNT(*) > 8
 ;
 ```
 
 ```markdown
+| id_cliente | nome         | compras |
+|------------|--------------|---------|
+| 14         | Cliente 14   | 9       |
+| 34         | Cliente 34   | 9       |
+| 54         | Cliente 54   | 9       |
+| 55         | Cliente 55   | 9       |
+| 61         | Cliente 61   | 9       |
+| 102        | Cliente 102  | 9       |
+| 111        | Cliente 111  | 9       |
+| 139        | Cliente 139  | 9       |
+| 195        | Cliente 195  | 9       |
+| 223        | Cliente 223  | 9       |
 ```
 ---
