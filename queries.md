@@ -185,7 +185,7 @@ LIMIT 5;
 | 34         | 1143.14     | 9            | 127.02       |
 | 182        | 1120.31     | 8            | 140.04       |
 ```
-
+##
 Notemos que o ticket medio dos melhores consumidores ficam bem proximos do ticket medio geral, isso indica que não possuimos algum cliente fora da curva, fazendo diversas compras, por um lado isso é bom, pois não dependemos de um cliente apenas.
 ---
 
@@ -245,7 +245,7 @@ ORDER BY
 | Belo Horizonte   | 145          |
 | Salvador         | 143          |
 ```
-
+##
 Nos dois resultados notamos valores próximos, também nos levando a entender que não dependemos de apenas um estado ou cidade para a empresa seguir em frente.
 ---
 
@@ -285,6 +285,6 @@ HAVING
 | 195        | Cliente 195  | 9       |
 | 223        | Cliente 223  | 9       |
 ```
-
+##
 Aqui encontramos uma frequencia alta de compra entre diversos consumidor, reduzi o valor de corte para 8, visto que até 7 compras recentes traria boa parte da tabela.
 ---
