@@ -1,4 +1,4 @@
-#[Ver outros projetos](https://github.com/matheusssilveira220/portfolio_dados)
+# [Ver outros projetos](https://github.com/matheusssilveira220/portfolio_dados)
 ---
 # :open_book: VAREJO
 
