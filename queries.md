@@ -28,10 +28,6 @@ O resultado da Query está representado abaixo:
 | 38         | 10           |"Produto 38"|
 | 12         | 9	    |"Produto 12"|
 | 26         | 8            |"Produto 26"|
-
-38	10	"Produto 38"
-12	9	"Produto 12"
-26	8	"Produto 26"
 ```
 ---
 
