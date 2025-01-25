@@ -157,6 +157,42 @@ ORDER BY
 ```
 ---
 
+## 6.	Faturamento mensal:
+Query simples para entendermos o faturamento mensal da empresa.
+
+```sql
+SELECT
+	EXTRACT(YEAR FROM data_venda) AS ano,
+	EXTRACT(MONTH FROM data_venda) AS mes,
+	SUM(valor) AS faturamento
+FROM
+	vendas
+GROUP BY
+	ano, mes
+ORDER BY
+	ano, mes;
+```
+
+```markdown
+| ano  | mes | faturamento |
+|------|-----|-------------|
+| 2024 | 1   | 7552.73     |
+| 2024 | 2   | 9598.99     |
+| 2024 | 3   | 10459.19    |
+| 2024 | 4   | 7977.08     |
+| 2024 | 5   | 8521.35     |
+| 2024 | 6   | 9431.07     |
+| 2024 | 7   | 11191.62    |
+| 2024 | 8   | 8671.33     |
+| 2024 | 9   | 7619.98     |
+| 2024 | 10  | 9720.42     |
+| 2024 | 11  | 10397.70    |
+| 2024 | 12  | 9508.18     |
+| 2025 | 1   | 1520.98     |
+```
+
+---
+
 # Perguntas sobre clientes:
 
 ## 6. Quais clientes têm o maior valor total de compras?
