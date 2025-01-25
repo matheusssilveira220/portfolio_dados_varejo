@@ -97,4 +97,5 @@ Farei a resposta crua sem gráficos no arquivos queries, e montarei um data stor
 ## [Queries](https://github.com/matheusssilveira220/portfolio_dados_varejo/blob/main/queries.md)
 As queries para resposta das dúvidas estão no arquivo queries, nele pode ver as etapas e decisões que tomei para responder cada pergunta, fiz o uso de CTES e JOINs.
 
-## Stotytelling
+## Stotytelling(https://github.com/matheusssilveira220/portfolio_dados_varejo/blob/main/storytelling.md)
+No arquivo Storytelling, podera conferir os insights que obtive realizando a análise nesse banco de dados.
