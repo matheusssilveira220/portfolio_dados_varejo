@@ -1,5 +1,4 @@
 # Storytelling
-...
 ## Análise do Faturamento
 
 Destaque:
@@ -32,7 +31,7 @@ Bundle de Produto A + Produto C (ambos populares) pode impulsionar vendas cruzad
 
 Destaque:
 
-"A Região Sudeste contribuiu com 55% do faturamento, enquanto a Região Norte teve o menor desempenho (apenas 5%)."
+A Região Sudeste contribuiu com 55% do faturamento, enquanto a Região Norte teve o menor desempenho (apenas 5%).
 
 Insights:
 
@@ -48,7 +47,7 @@ Analisar logística na Região Norte: custos de frete altos podem estar impactan
 
 Destaque:
 
-"Clientes frequentes (3+ compras no ano) representam 30% da base, mas geraram 60% da receita."
+Clientes frequentes (3+ compras no ano) representam 30% da base, mas geraram 60% da receita.
 
 Insights:
 
@@ -57,22 +56,6 @@ Estratégia de Fidelização:
 Criar um programa de recompensas para clientes frequentes.
 
 Usar cupons personalizados para reengajar clientes inativos (70% da base comprou apenas 1 vez).
-
----
-
-## Tendências por Categoria
-
-Destaque:
-
-"A categoria Eletrônicos liderou em vendas (40%), enquanto Moda teve crescimento de 15% no último trimestre."
-
-Insights:
-
-Oportunidade:
-
-Aumentar estoque de eletrônicos para o período de Black Friday.
-
-Parcerias com marcas de moda para capitalizar o crescimento recente.
 
 ---
 
