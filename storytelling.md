@@ -76,7 +76,7 @@ Parcerias com marcas de moda para capitalizar o crescimento recente.
 
 ---
 
-##Conclusão e Recomendações
+## Conclusão e Recomendações
 
 Resumo dos Pontos-Chave:
 
