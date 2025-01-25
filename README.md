@@ -2,7 +2,9 @@
 ---
 # :open_book: VAREJO
 
-Projeto voltado a simular uma empresa de varejo, especificamente o setor de vendas e parcialmente o controle de estoque / fornecedores. Com ajuda do DeepSeek, criei repositorios aleatorios de dados dentro do PostgreSQL. Criado tabelas e itens dentro do BD, utilizei SQL e PowerBI para realizar a Análise + Data visualization.
+Projeto voltado a simular uma empresa de varejo, especificamente o setor de vendas. Com ajuda do DeepSeek, criei repositorios aleatorios de dados dentro do PostgreSQL. Criado tabelas e itens dentro do BD, utilizei SQL para realizar as queries e encontrar os insights dentro do Banco de Dados
+
+---
 
 ### :wrench: Ferrramentas
 -**DeepSeek**
@@ -10,8 +12,6 @@ Projeto voltado a simular uma empresa de varejo, especificamente o setor de vend
 -**PostgreSQL**
 
 -**SQL**
-
--**PowerBI**
 
 ### :memo: Skills utilizadas
 
@@ -21,18 +21,21 @@ Projeto voltado a simular uma empresa de varejo, especificamente o setor de vend
 
 -**Criações de Queries**
 
--**Importação de Dados ao PowerBI**
-
--**Data visualization**
-
 -**Data Storytelling**
+
+---
 
 ## Replicar projeto
 
 Para replicar o projeto, será necessário a utilização do Banco de Dados PostgreSQL;
+
 Criar as tabelas citadas;
+
 Randomizar os dados;
+
 Então executar as queries na pasta queries.
+
+---
 
 # Etapas
 
@@ -45,6 +48,8 @@ Optei por utilizar o BD PostgreSQL, por se tratar de um software OpenSource e de
 Por se tratar de um projeto ficticio, não existe um stakeholder, para suprir essa etapa, solicitei ao DeepSeek, que simulasse essa etapa. Pedi que realizasse perguntas necessárias para entender o andamento do processo de vendas, para que eu encontrasse um norte para seguir com a análise. 
 
 Criei o seguinte script de conversa após explicar o projeto a ele:
+
+---
 
 **Script**
 
@@ -66,6 +71,7 @@ Claro! Como stakeholder do projeto, aqui estão algumas perguntas relevantes sob
 7. **Qual é o perfil geográfico dos nossos clientes mais ativos?**
 8. **Quantos clientes fizeram compras repetidas no último ano?**
 
+---
 
 ## Análise Exploratória
 
@@ -82,14 +88,13 @@ Nada de anormal, por se tratar de dados criados dentro do próprio banco de dado
 3. Começar a responder as perguntas utilizando as Queries.
 Farei isso criando queries dentro do banco de dados.
 
-4. Farei um dashboard interativo, que contenham todas as informações presentes no banco de dados, de forma que fique simples que o stakeholder ou qualquer outro consiga encontrar as informações desejadas.
+---
 
 ## Definição de como serão respondidas as perguntas
 
-Como estamos simulando um stakeholder, não posso assumir a forma que ele deseja receber, dessa forma farei 2 apresentações diferentes. A primeira será feita utilizando as queries, respondendo diretamente as perguntas, e buscando algum insight. Já a segunda, em forma de dashboard contendo gráficos de evolução temporal e permitindo que o usuário visualize as áreas desejadas.
+Farei a resposta crua sem gráficos no arquivos queries, e montarei um data storytelling no arquivo storytelling.
 
 ## [Queries](https://github.com/matheusssilveira220/portfolio_dados_varejo/blob/main/queries.md)
 As queries para resposta das dúvidas estão no arquivo queries, nele pode ver as etapas e decisões que tomei para responder cada pergunta, fiz o uso de CTES e JOINs.
 
-## Dashboard
-Ainda em construção...
+## Stotytelling
